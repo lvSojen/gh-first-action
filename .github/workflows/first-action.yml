@@ -1,0 +1,20 @@
+# name of this workflow
+
+name: First Workflow
+
+# when should this workflow be executed
+# workflow_dispatch, this allow users to manually trigger the github action
+
+on: workflow_dispatch
+
+# jobs for given tasks
+jobs:
+  first-job:
+    # choose environment
+    runs-on: ubuntu-latest
+    # steps for this task
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - Bye"
