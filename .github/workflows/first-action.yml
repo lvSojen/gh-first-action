@@ -15,6 +15,6 @@ jobs:
     # steps for this task
     steps:
       - name: Print greeting and Print goodbye
-        run: &&
-          echo "Hello World!"
+        run: 
+          echo "Hello World!" &&
           echo "Done - Bye"
